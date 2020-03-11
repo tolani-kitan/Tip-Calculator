@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <h2 id="heading">Tip Calculator</h2>
+    <div class="container">
+        <div class="wrapper">
+            
+            <div class="inputs">
+                <div class="space">
+                    <label for="">Bill Amount</label>
+                    <input type="number" id="bill" value="" class="pad">
+                </div>
+
+                <div class="space">
+                    <label for="">Tip (%)</label>
+                    <select name="" id="tip" class="pad">
+                        <option value="30">Outstanding Service (30%)</option>
+                        <option value="20">Good Service (20%)</option>
+                        <option value="10">Just Okay (10%)</option>
+                        <option value="5">Bad Service (5%)</option>
+                        <option value="0">No Tip (0%)</option>
+                    </select>
+                </div>
+                <div class="space">
+                    <label for="">No. of People</label>
+                    <input type="number" id="numOfPeople" class="pad">
+                </div>
+            </div>
+            
+            <div id="Rcollation">
+                <div class="results">
+                    <div class="result-box">
+                        <p class="result-title">Total Bill (Tip Inclusive)</p>
+                        <p id="totalBill" class="result">0.00</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-title">Tip Amount</p>
+                        <p id="tipAmount" class="result">0.00</p>
+                    </div>      
+                </div>
+                <div class="results">
+                    <div class="result-box">
+                        <p class="result-title">Tip Per Individual</p>
+                        <p id="tipPerPerson" class="result">0.00</p>
+                    </div>
+                    <div class="result-box">
+                        <p class="result-title" >Individual Bill</p>
+                        <p id="billPerPerson" class="result">0.00</p>
+                    </div>                
+                </div>
+
+                <div id="btn-container">
+                    <div >
+                        <button id="calculate">Calculate Bill</button>
+                    </div>
+                    <div>
+                        <button id="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <script src="./script.js"></script>
+    
+</body>
+</html>
